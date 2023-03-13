@@ -3,3 +3,230 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  background: #fff url("assets/bg-mobile.png") no-repeat;
+  background-size: cover;
+  padding: 2.5rem 3rem 7rem 3rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #272a31;
+}
+
+button {
+  border: none;
+}
+
+.logo {
+  width: 55%;
+}
+
+.mobile-menu {
+  width: 3rem;
+  height: 2.4rem;
+}
+
+.headline-section {
+  background-color: #f1f3f49c;
+  padding: 0 1.5rem 8rem;
+}
+
+h1,
+.hello,
+h4 {
+  color: #ec5242;
+}
+
+h1 {
+  margin: 0.6rem 0 2rem;
+  font-size: 4rem;
+  font-weight: 900;
+  display: inline-block;
+  background-image: url(assets/fire-image.jpeg);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.description {
+  padding: 1.5rem;
+  border: 3px solid white;
+  border-radius: 1px;
+}
+
+.summit-date {
+  margin: 1.5rem 0 1.2rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #272a31;
+}
+
+.main-program {
+  background-color: #272a31;
+  padding: 3.5rem 1.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.main-program h2,
+.main-program p,
+.partners h2 {
+  color: white;
+}
+
+.main-program p {
+  width: 60%;
+}
+
+hr {
+  width: 5rem;
+  height: 1px;
+  background-color: #ec5242;
+  border: none;
+  margin: 2rem 0 3rem 0;
+}
+
+.main-program svg {
+  width: 5rem;
+}
+
+.main-program li {
+  display: flex;
+  background-color: #41454e;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.main-program h4 {
+  font-size: 1.8rem;
+  width: 30%;
+}
+
+.main-program button {
+  background-color: #ec5242;
+  color: white;
+  padding: 3rem 4.8rem;
+  font-size: 1.8rem;
+  margin-top: 3rem;
+}
+
+.speakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.5rem 1.5rem 5rem;
+}
+
+.speakers p {
+  line-height: 1.8rem;
+}
+
+.speakers ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.speakers li {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.speakers hr {
+  margin-bottom: 4rem;
+}
+
+.speaker-profile h3 {
+  font-size: 2rem;
+}
+
+.footer p {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.speaker-profile p {
+  font-size: 1.3rem;
+}
+
+.speaker-profile h3 + p {
+  color: #ec5242;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+.speaker-profile hr {
+  width: 2rem;
+  height: 1px;
+  background-color: #d3d3d3;
+  margin: 0.7rem 0 0.9rem 0;
+}
+
+.speakers button {
+  border: 1px solid #272a31;
+  background: none;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  color: #272a31;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.down {
+  margin-top: 0.5rem;
+}
+
+.partners {
+  background-color: #272a31;
+  padding: 3.5rem 1.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partners ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.partners li {
+  width: 25%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem 4rem;
+  align-items: center;
+}
