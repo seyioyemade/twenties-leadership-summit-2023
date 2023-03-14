@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+header {
+  background: #eeeeee;
+  background-size: cover;
+  padding: 2.5rem 3rem 3rem 3rem;
+  text-align: left;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #272a31;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.logo {
+  width: 70%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.mobile-menu {
+  width: 3rem;
+  height: 2.4rem;
+}
+
+.headline-section {
+  background-color: #eeeeee;
+  padding: 0 2.4rem 4rem;
+}
+
+h1,
+.hello {
+  color: #ec5242;
+}
+
+.hello {
+  font-size: 2.4rem
+}
+
+h1 {
+  margin: 0.6rem 0 3rem;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.description {
+  padding: 1.5rem 1.2rem;
+  border: 1px solid #bdbdbd;
+  background-color: white;
+  border-radius: 1px;
+}
+
+address {
+  font-style: normal;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #272a31;
+}
+
+address > span {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.logo-description {
+  padding: 3.5rem 2.4rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  border: 1px solid #d3d3d3;
+  padding: 2.5rem 3rem;
+  margin-top: 4rem;
+}
+
+.logo-description > p {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+hr {
+  width: 3rem;
+  height: 1px;
+  background-color: #ec5242;
+  border: none;
+  margin: 1.8rem 0;
+}
+
+.past-summits {
+  padding: 4.5rem 5rem;
+  border-top: 1px solid #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.past-summits ul{
+  margin-top: 4rem;
+}
+
+.past-summits ul>li{
+  margin-bottom: 1rem;
+  position: relative;  
+}
+
+.past-summits ul>li>p{
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-40%, -52%);
+  color: white;
+}
+
+.year {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.partners {
+  background-color: #272a31;
+  padding: 3.5rem 1.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partners ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.partners li {
+  width: 25%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 4rem;
+  align-items: center;
+  text-align: left;
+}
+
+.footer p {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners h2 {
+  color: white;
+}
+
+.footer .logo {
+    width: 55%;
+}
+
+
+

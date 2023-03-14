@@ -12,9 +12,12 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.container {
+  background: url("assets/bg-mobile.png") top center no-repeat;
+  background-size: contain;
+}
+
 header {
-  background: #fff url("assets/bg-mobile.png") no-repeat;
-  background-size: cover;
   padding: 2.5rem 3rem 7rem 3rem;
 }
 
@@ -24,8 +27,13 @@ p {
   color: #272a31;
 }
 
+li {
+  list-style: none;
+}
+
 button {
   border: none;
+  background: none;
 }
 
 .logo {
@@ -38,14 +46,17 @@ button {
 }
 
 .headline-section {
-  background-color: #f1f3f49c;
-  padding: 0 1.5rem 8rem;
+  padding: 0 1.5rem 8rem; 
 }
 
 h1,
 .hello,
 h4 {
   color: #ec5242;
+}
+
+.hello {
+  font-size: 2.2rem
 }
 
 h1 {
@@ -227,6 +238,6 @@ img {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 3.5rem 4rem;
+  padding: 3rem 4rem;
   align-items: center;
 }
