@@ -17,10 +17,33 @@ body {
 }
 
 header {
-  background: #eeeeee;
-  background-size: cover;
+  background: #eee;
   padding: 2.5rem 3rem 3rem 3rem;
   text-align: left;
+  z-index: 1;
+}
+
+.logo {
+  width: 70%;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  width: 3rem;
+  height: 1px;
+  background-color: #ec5242;
+  border: none;
+  margin: 1.8rem 0;
+}
+
+header ul,
+nav .logo,
+.main-program > a,
+.headline-section hr {
+  display: none;
 }
 
 p {
@@ -32,10 +55,6 @@ p {
 button {
   border: none;
   background: none;
-}
-
-.logo {
-  width: 70%;
 }
 
 img {
@@ -53,7 +72,7 @@ li {
 }
 
 .headline-section {
-  background-color: #eeeeee;
+  background-color: #eee;
   padding: 0 2.4rem 4rem;
 }
 
@@ -63,7 +82,7 @@ h1,
 }
 
 .hello {
-  font-size: 2.4rem
+  font-size: 2.4rem;
 }
 
 h1 {
@@ -110,16 +129,9 @@ address > span {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 700;
-}
-
-hr {
-  width: 3rem;
-  height: 1px;
-  background-color: #ec5242;
-  border: none;
-  margin: 1.8rem 0;
+  color: #272a31;
 }
 
 .past-summits {
@@ -130,16 +142,25 @@ hr {
   align-items: center;
 }
 
-.past-summits ul{
+.past-summits ul {
   margin-top: 4rem;
 }
 
-.past-summits ul>li{
-  margin-bottom: 1rem;
-  position: relative;  
+.partners li {
+  width: 25%;
 }
 
-.past-summits ul>li>p{
+.past-summits ul > li {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.footer p {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.past-summits ul > li > p {
   position: absolute;
   top: 50%;
   left: 45%;
@@ -167,10 +188,6 @@ hr {
   gap: 3rem;
 }
 
-.partners li {
-  width: 25%;
-}
-
 footer {
   display: flex;
   justify-content: space-between;
@@ -179,18 +196,167 @@ footer {
   text-align: left;
 }
 
-.footer p {
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
 .partners h2 {
   color: white;
 }
 
 .footer .logo {
-    width: 55%;
+  width: 55%;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-button,
+  .hello {
+    display: none;
+  }
 
+  nav .logo {
+    display: block;
+    width: 32%;
+  }
 
+  header {
+    position: fixed;
+    width: 100%;
+    padding: 0;
+  }
+
+  header > ul {
+    display: flex;
+    justify-content: flex-end;
+    background: #272a31;
+    padding: 1rem 7rem;
+    gap: 2rem;
+  }
+
+  header > ul a {
+    color: #d3d3d3;
+    font-size: 1.2rem;
+  }
+
+  .headline-section {
+    padding: 17rem 7rem 9rem;
+  }
+
+  .headline-section hr {
+    display: block;
+    margin: 0 auto 3.2rem auto;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 7rem;
+    background: white;
+    align-items: center;
+    box-shadow: 0 3px 5px #d3d3d3;
+  }
+
+  nav > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+  }
+
+  nav > ul > li {
+    display: inline;
+    font-size: 1.4rem;
+  }
+
+  nav > ul a {
+    color: #272a31;
+  }
+
+  nav button {
+    border: 3px solid #ec5242;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    margin: 0 0 2rem;
+    line-height: 6.7rem;
+  }
+
+  .description {
+    padding: 2.5rem 4.2rem;
+  }
+
+  address {
+    margin-top: 4.5rem;
+  }
+
+  .logo-description {
+    padding: 5.5rem 2.4rem 5rem;
+    border-top: 1px solid #d3d3d3;
+  }
+
+  .logo-container {
+    padding: 2.5rem 5.5rem;
+  }
+
+  .past-summits {
+    padding: 5.5rem 5rem 10rem;
+  }
+
+  .past-summits ul {
+    display: flex;
+    gap: 2rem;
+    width: 85%;
+  }
+
+  .partners ul {
+    flex-wrap: nowrap;
+  }
+
+  .partners li {
+    width: 10%;
+  }
+
+  footer {
+    padding: 4rem 7rem;
+    background: #eee;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header > ul {
+    padding: 1rem 14rem;
+  }
+
+  .headline-section {
+    padding: 17rem 14rem 10rem;
+  }
+
+  nav {
+    padding: 1.5rem 14rem;
+  }
+
+  nav > ul {
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 5.5rem;
+    margin: 2.5rem 0 2rem;
+    line-height: 6.7rem;
+  }
+
+  .past-summits ul {
+    width: 60%;
+  }
+
+  .partners ul {
+    flex-wrap: nowrap;
+    gap: 5rem;
+  }
+
+  .partners li {
+    width: 8%;
+  }
+
+  footer {
+    padding: 4rem 14rem;
+  }
+}
