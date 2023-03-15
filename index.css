@@ -18,7 +18,7 @@ body {
 }
 
 header {
-  padding: 2.5rem 3rem 7rem 3rem;
+  padding: 2.5rem 3rem 7rem 2rem;
 }
 
 a {
@@ -31,7 +31,7 @@ a {
 
 header ul,
 nav .logo,
-.main-program > a {
+.see-main-program {
   display: none;
 }
 
@@ -52,8 +52,8 @@ button {
 }
 
 .mobile-menu {
-  width: 3rem;
-  height: 2.4rem;
+  width: 3.1rem;
+  height: 2.5rem;
 }
 
 .headline-section {
@@ -71,7 +71,7 @@ h4 {
 }
 
 h1 {
-  margin: 0.6rem 0 2rem;
+  margin: 0.6rem 0 2rem 0.7rem;
   font-size: 4rem;
   font-weight: 900;
   line-height: 4.5rem;
@@ -168,11 +168,16 @@ hr {
   flex-direction: column;
 }
 
-.speakers li {
+.hide-speaker {
+  display: none;
+}
+
+.show-speaker {
   display: flex;
   gap: 2rem;
   margin-bottom: 4rem;
 }
+
 
 img {
   width: 100%;
@@ -222,6 +227,7 @@ img {
   align-items: center;
   gap: 1rem;
   justify-content: center;
+  width: 100%;
 }
 
 .down {
@@ -252,6 +258,52 @@ footer {
   justify-content: space-between;
   padding: 3rem 4rem;
   align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #272a3179;
+  backdrop-filter: blur(4px);
+  overflow-x: hidden;
+}
+
+.mobile-menu-canvas ul {
+  position: relative;
+  left: 2.8rem;
+  top: 11.6rem;
+}
+
+.mobile-menu-canvas li > a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+}
+
+.mobile-menu-canvas li {
+  margin-bottom: 4rem;
+}
+
+.close {
+  position: fixed;
+  z-index: 2;
+  width: 2rem;
+  height: 1.4rem;
+  margin-left: 0.8rem ;
 }
 
 @media screen and (min-width: 768px) {
@@ -291,7 +343,7 @@ footer {
 
   .headline-section {
     padding: 25rem 7rem 12rem;
-    background: url("assets/bg-mobile.png") top center no-repeat;
+    background: url("assets/bg-desktop.png") top center no-repeat;
     background-size: cover;
   }
 
@@ -300,7 +352,7 @@ footer {
   }
 
   header > ul a,
-  .main-program > a {
+  .see-main-program {
     color: #d3d3d3;
     font-size: 1.2rem;
   }
@@ -332,7 +384,7 @@ footer {
 
   h1 {
     font-size: 5.5rem;
-    margin: 2.5rem 0 2rem;
+    margin: 2.5rem 0 2rem 0.7rem; 
     line-height: 6.7rem;
   }
 
@@ -366,7 +418,10 @@ footer {
     padding: 2rem 1rem;
   }
 
-  .speakers li {
+  .hide-speaker, .show-speaker {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 4rem;
     width: 48%;
   }
 
@@ -391,7 +446,7 @@ footer {
     height: 4rem;
   }
 
-  .main-program > a {
+  .see-main-program {
     display: inline;
     margin-top: 5.5rem;
     font-size: 1.4rem;
@@ -439,7 +494,7 @@ footer {
 
   h1 {
     font-size: 6.5rem;
-    margin: 2.5rem 0 2rem;
+    margin: 2.5rem 0 2rem 0.7rem;
     line-height: 6.7rem;
   }
 
@@ -459,7 +514,7 @@ footer {
     margin-top: 2rem;
   }
 
-  .speakers li {
+  .hide-speaker, .show-speaker {
     gap: 0;
   }
 
