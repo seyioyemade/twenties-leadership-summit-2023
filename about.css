@@ -42,7 +42,8 @@ hr {
 header ul,
 nav .logo,
 .main-program > a,
-.headline-section hr {
+.headline-section hr,
+footer .logo2 {
   display: none;
 }
 
@@ -151,6 +152,10 @@ h2 {
   width: 25%;
 }
 
+.mobile-menu-canvas li {
+  margin-bottom: 4rem;
+}
+
 .past-summits ul > li {
   margin-bottom: 1rem;
   position: relative;
@@ -197,10 +202,6 @@ footer {
   text-align: left;
 }
 
-.partners h2 {
-  color: white;
-}
-
 .footer .logo {
   width: 55%;
 }
@@ -239,23 +240,33 @@ footer {
   line-height: 4.4rem;
 }
 
-.mobile-menu-canvas li {
-  margin-bottom: 4rem;
-}
-
 .close {
   position: fixed;
   z-index: 2;
   width: 2rem;
   height: 1.4rem;
-  margin-left: 0.8rem ;
+  margin-left: 0.8rem;
 }
 
-
 @media screen and (min-width: 768px) {
+  header > ul a {
+    color: #d3d3d3;
+    font-size: 1.2rem;
+  }
+
+  nav > ul a {
+    color: #272a31;
+  }
+
   .menu-button,
-  .hello {
+  .hello,
+  .partners,
+  footer > a:nth-child(1) {
     display: none;
+  }
+
+  footer .logo2 {
+    display: block;
   }
 
   nav .logo {
@@ -275,11 +286,22 @@ footer {
     background: #272a31;
     padding: 1rem 7rem;
     gap: 2rem;
+    align-items: center;
   }
 
-  header > ul a {
-    color: #d3d3d3;
-    font-size: 1.2rem;
+  nav > ul > li {
+    display: inline;
+    font-size: 1.4rem;
+  }
+
+  header > ul > li:nth-child(3) {
+    margin-left: 1rem;
+  }
+
+  header svg {
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
   }
 
   .headline-section {
@@ -307,13 +329,8 @@ footer {
     align-items: center;
   }
 
-  nav > ul > li {
-    display: inline;
-    font-size: 1.4rem;
-  }
-
-  nav > ul a {
-    color: #272a31;
+  nav > ul a:hover {
+    color: #ec5242;
   }
 
   nav button {
@@ -354,17 +371,13 @@ footer {
     width: 85%;
   }
 
-  .partners ul {
-    flex-wrap: nowrap;
-  }
-
-  .partners li {
-    width: 10%;
-  }
-
   footer {
     padding: 4rem 7rem;
-    background: #eee;
+    background: #272a31;
+  }
+
+  footer p {
+    color: #d3d3d3;
   }
 }
 
@@ -393,15 +406,6 @@ footer {
 
   .past-summits ul {
     width: 60%;
-  }
-
-  .partners ul {
-    flex-wrap: nowrap;
-    gap: 5rem;
-  }
-
-  .partners li {
-    width: 8%;
   }
 
   footer {
