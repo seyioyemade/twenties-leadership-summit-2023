@@ -187,6 +187,14 @@ h2 {
   align-items: center;
 }
 
+.partners h2 {
+  color: #d3d3d3;
+}
+
+.partners hr {
+  margin-bottom: 3.5rem;
+}
+
 .partners ul {
   display: flex;
   flex-wrap: wrap;
