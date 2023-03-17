@@ -208,7 +208,7 @@ h2 {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 3rem 4rem;
   align-items: center;
   text-align: left;
