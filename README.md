@@ -163,7 +163,7 @@ If you like this project and would love to show your support, please contact the
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - I would like to thank [Microverse](https://www.microverse.org/) for giving this opportunity to learn.
-- I would like to thank [Cindy Shin](https://www.behance.net/adagio07), the author of the original design.
+- I would like to thank [Cindy Shin](https://www.behance.net/adagio07), the [author of the original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). 
 - Code Reviewers & Coding Partners.
 - Hat tip to anyone whose code was used.
 
